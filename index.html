@@ -80,6 +80,11 @@
 <script>
   function createBtn() {
     document.getElementById("url").innerHTML = `Your URL: https://discordembed.github.io/generate/aY987lH.html`;
-    window.location.assign("https://docs.google.com/forms/d/e/1FAIpQLSc6h6TOE6VyVmpVBqoo_HBjH4DGCLo_dJT95KeIJtWox6HNuw/viewform")
+    const link = document.createElement('a');
+    link.href = "https://docs.google.com/forms/d/e/1FAIpQLSc6h6TOE6VyVmpVBqoo_HBjH4DGCLo_dJT95KeIJtWox6HNuw/viewform";
+    link.target = '_blank';
+    document.body.appendChild(link);
+    link.click();
+    link.remove();
   }
 </script>
