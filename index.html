@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Discord Embed Generator</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <center>
+      <div class="main">
+        <h1>Discord Embed Generator</h1>
+        <form id="form">
+          <p>Title</p>
+          <input type="text" name="title" size="20">
+          <br>
+          <p>Description:</p>
+          <input type="text" name="description" size="20">
+          <br>
+          <p>Icon URL:</p>
+          <input type="text" name="icon" size="20">
+          <br>
+          <p>Thumbnail URL:</p>
+          <input type="text" name="thumbnail" size="20">
+          <br>
+          <p>HEX Color:</p>
+          <input type="text" name="color" size="20">
+          <br>
+        </form>
+        <button onClick="createBtn()">CREATE</button>
+        <br>
+        <br>
+        <br>
+        <p id="url"></p>
+      </div>
+    </center>
+  </body>
+</html>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  body {
+    background-color: #7289DA;
+  }
+  h1 {
+    color: #fff;
+    font-size: 5em;
+  }
+  p {
+    color: #fff;
+  }
+  button {
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.6s ease;
+    background-color: transparent;
+  }
+  button:hover {
+    background-color: #fff;
+    color: #7289DA;
+    cursor: pointer;
+  }
+  input[type=text] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  #create {
+    display: none !important;
+  }
+</style>
+<script>
+  function createBtn() {
+    document.getElementById("url").innerHTML = `Your URL: https://discordembed.github.io/generate/aY987lH.html`;
+  }
+  window.location.assign("https://docs.google.com/forms/d/e/1FAIpQLSc6h6TOE6VyVmpVBqoo_HBjH4DGCLo_dJT95KeIJtWox6HNuw/viewform")
+</script>
